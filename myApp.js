@@ -8,46 +8,8 @@ const helmet = require('helmet');
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+router.use(app.json());
+router.use(app.urlencoded({ extended: true }));
 module.exports = app;
 const api = require('./server.js');
 app.use(express.static('public'));
